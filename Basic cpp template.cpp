@@ -5,9 +5,6 @@ using namespace std;
 #define fo(i,n) for(int i=0;i<n;i++)
 
 #define pb push_back  
-#define f first
-#define s second
-
 
 int main(){
     cout<<"Hello\n";
