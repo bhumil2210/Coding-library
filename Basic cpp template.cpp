@@ -18,7 +18,7 @@ using namespace __gnu_pbds;
 #define fill0(a)                memset(a,0,sizeof(a))
 #define fillneg1(a)             memset(a,-1,sizeof(a))
 #define fillbig(a)              memset(a,63,sizeof(a))
-#define setbits(x)              __builtin_popcount(x)
+#define getSetbits(x)              __builtin_popcount(x)
 #define fo(i,n)                 for(int i=0;i<n;i++)
 #define print(x)                for(auto it=x.begin();it!=x.end();it++)\
 								cout<<*it<<' '; cout<<endl
@@ -40,8 +40,17 @@ typedef vector<bool>            vb;
 typedef vector<vb>              vvb;
 typedef vector<string>          vs;
 
+void printMatrix(vvi mat){
+	for(int i=0;i<mat.size();i++){
+		for(int j=0;j<mat[0].size();j++){
+			cout<<mat[i][j]<<" ";
+		}
+		cout<<"\n";
+	}
+}
+
 int main(){
     cout<<"Hello\n";
-    return 1;
+    return 0;
 
 }
