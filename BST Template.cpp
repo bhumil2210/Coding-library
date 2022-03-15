@@ -1,7 +1,3 @@
-// Goonj This file contains code for create,search, and delete node of BST along with bfs,inorder,pre and post.
-// Sexy code hai 
-// Hope you like it
-
 #include<bits/stdc++.h>
 using namespace std;
 
