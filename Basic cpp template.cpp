@@ -49,6 +49,18 @@ void printMatrix(vvi mat){
 	}
 }
 
+void printMap(unordered_map<int,int>&m){
+	for(auto it=m.begin();it!=m.end();it++){
+		cout << it->first << "\t" << it->second <<"\n";
+	}
+}
+
+void printMap(map<int,int>&m){
+	for(auto it=m.begin();it!=m.end();it++){
+		cout << it->first << "\t" << it->second <<"\n";
+	}
+}
+
 int main(){
     cout<<"Hello\n";
     return 0;

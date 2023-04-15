@@ -16,6 +16,7 @@ using namespace __gnu_pbds;
 #define F first
 #define S second
 
+// >=key
 int lower_b(int arr[], int l, int h,int key){
     
     while(l<h){
@@ -32,6 +33,7 @@ int lower_b(int arr[], int l, int h,int key){
     return l;
 }
 
+// >key
 int upper_b_right(int arr[], int l, int h, int key){
     
     int index=-1;
@@ -51,6 +53,7 @@ int upper_b_right(int arr[], int l, int h, int key){
     return index;
 }
 
+// <key
 int upper_b_left(int arr[], int l, int h, int key){
     
     int index=-1;

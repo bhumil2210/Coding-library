@@ -1,3 +1,4 @@
+// min heap
 #include <bits/stdc++.h>
 using namespace std;
 vector<int>v={51, 23, 12, 9, 30, 2, 50};

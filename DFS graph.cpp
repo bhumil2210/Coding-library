@@ -9,6 +9,31 @@ void addedge(int u,int v){
 
 }
 
+void recurDSFUtil(int i, bool *visited){
+
+	for(auto it=adjacency_list[i].begin();it!=adjacency_list.end()){
+		if(visited[*it]==false){
+			cout << *it << '\n';
+			visited[*it]=true;
+			recurDSFUtil(*it,visited);
+		}
+	}
+
+}
+
+void recurDSF(int n){
+	bool visited[n];
+	for(int i=0;i<n;i++) visited[i]=false;
+
+	for(int i=0;i<n;i++){
+		if(visited[i]==false){
+			cout << i<<"\n";
+			visited[i]=true;
+			recurDSFUtil(i,visited);
+		}
+	}
+}
+
 void dfs(int root){
 
 	stack<int>s;
